@@ -1699,6 +1699,7 @@
 	.image {
 		display: inline-block;
 		border: 0;
+		padding: 10px;
 	}
 
 		.image img {
