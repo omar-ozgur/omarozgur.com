@@ -1,3 +1,16 @@
-.test {
-	text-align: center;
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+section, .jumbotron {
+	height: 100%;
+	margin: 0;
+}
+
+.header {
+	background-image: url("../img/la.jpeg");
+	background-size: 100vmax 100vmax;
+	background-repeat: no-repeat;
+	background-position: center;
 }
