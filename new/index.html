@@ -9,22 +9,31 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div id="sidebar">
+		<button type="button" class="btn btn-default sidebar-icon" value="#header">
+			<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+		</button>
+		<br>
+		<button type="button" class="btn btn-default sidebar-icon" value="#header2">
+			<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+		</button>
+	</div>
 	<section id="header">
-		<div class="jumbotron header">
+		<div class="jumbotron bg-header">
 			<div class="container">
-				<button class="button" value="#header2">Next Section</button>
+
 			</div>
 		</div>
 	</section>
 	<section id="header2">
-		<div class="jumbotron header">
+		<div class="jumbotron bg-header" data-0p="margin-left: 100%;" data-100p="margin-left: 0;">
 			<div class="container">
-				<button class="button" value="#header">Back to Top</button>
 			</div>
 		</div>
 	</section>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/skrollr.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

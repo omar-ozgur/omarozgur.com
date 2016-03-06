@@ -1,14 +1,31 @@
-html, body {
+*,:before,:after {
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-backface-visibility:hidden;
+}
+
+html, body, section, .jumbotron {
 	width: 100%;
-	height: 100%;
-}
-
-section, .jumbotron {
-	height: 100%;
+	height: 100% !important;
 	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
 }
 
-.header {
+#sidebar {
+	position: fixed;
+	right: 5%;
+	top: 25%;
+}
+
+.sidebar-icon {
+	margin: 10%;
+	border-radius: 50%;
+	outline: none !important;
+}
+
+.bg-header {
 	background-image: url("../img/la.jpeg");
 	background-size: 100vmax 100vmax;
 	background-repeat: no-repeat;

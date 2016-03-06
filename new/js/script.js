@@ -1,9 +1,15 @@
-$(document).ready(function(){ 
-	$(".button").click(function() {
+function SkrollrInit(){
+	var s = skrollr.init();
+}
+
+function ScrollToSection(){
+	$(".sidebar-icon").click(function() {
 		var section = $(this).attr("value");
-		console.log(section);
-		$('html, body').animate({
-			scrollTop: $(section).offset().top
-		}, 1000);
+		$("html, body").animate({scrollTop: $(section).offset().top}, 750, "swing");
 	});
-}) 
+}
+
+$(document).ready(function(){ 
+	SkrollrInit();
+	ScrollToSection();
+}); 
