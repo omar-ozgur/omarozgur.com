@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
 	<meta charset="utf-8">
 	<meta name="author" content="Omar Ozgur">
 	<title>Omar Ozgur</title>
@@ -9,6 +11,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div id="skrollr-body"></div>
 	<div id="sidebar">
 		<button type="button" class="btn btn-default sidebar-icon" value="#header">
 			<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
@@ -19,14 +22,39 @@
 		</button>
 	</div>
 	<section id="header">
-		<div class="jumbotron bg-header">
-			<div class="container">
-
+		<div class="jumbotron bg-header bg-fixed">
+			<div class="bg-header-cover">
+				<div class="container" data-0p="opacity: 1" data-top-bottom="opacity: 0">
+					<div class="content-header row">
+	                	<div class="col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-4 text-center">
+	                		<div class="circle">
+	                			<img id="img-profile" src="img/profile.png">
+	                		</div>
+	                	</div>
+	                	<div class="col-sm-8 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+	                		<h1>Omar Ozgur</h1>
+							<h2>Software Engineer, App Developer, Game Enthusiast</h2>
+	                	</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-4 col-xs-offset-4 text-center">
+							<button type="button" class="btn btn-default sidebar-icon down-arrow" value="#header2">
+								<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section id="header2">
-		<div class="jumbotron bg-header" data-0p="margin-left: 100%;" data-100p="margin-left: 0;">
+		<div class="jumbotron bg-header" data-0p="margin-left: 0%;" data-100p="margin-left: 0;">
+			<div class="container">
+			</div>
+		</div>
+	</section>
+	<section id="header3">
+		<div class="jumbotron bg-header" data-0p="margin-left: 0%;" data-100p="margin-left: 0;">
 			<div class="container">
 			</div>
 		</div>
