@@ -64,6 +64,10 @@ h2 {
 }
 
 /* Content */
+.full-height {
+	height: 100%;
+}
+
 .circle {
 	width: 80%;
 	height: auto;
@@ -80,7 +84,7 @@ h2 {
 }
 
 .content-header {
-	margin-top: 15vh;
+	margin-top: 20vh;
 	color: #ffffff;
 }
 
@@ -89,4 +93,42 @@ h2 {
 	color: #ffffff !important;
 	border: none !important;
 	font-size: 200%;
+}
+
+.content-footer {
+	height: 80%;
+}
+
+.footer {
+	height: 20vh;
+	background: rgba(50, 50, 50, 0.9);
+	bottom: 0px;
+}
+
+.footer-list {
+	height: 100%;
+	margin: 0px 5vw 0px 0px;
+	list-style-type: none;
+	display: table;
+	float: right;
+}
+
+.footer-list li {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.footer-list span {
+	width: 1.5em;
+    height: 1.5em;
+    line-height: 150%;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.text-footer {
+	margin: 0px 0px 0px 5vw;
+	line-height: 20vh;
+	color: #dddddd;
+	font-size: 1.5em;
 }
