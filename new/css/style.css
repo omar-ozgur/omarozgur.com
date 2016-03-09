@@ -96,11 +96,11 @@ h2 {
 }
 
 .content-footer {
-	height: 80%;
+	height: 90%;
 }
 
 .footer {
-	height: 20vh;
+	height: 10vh;
 	background: rgba(50, 50, 50, 0.9);
 	bottom: 0px;
 }
@@ -128,7 +128,7 @@ h2 {
 
 .text-footer {
 	margin: 0px 0px 0px 5vw;
-	line-height: 20vh;
+	line-height: 10vh;
 	color: #dddddd;
-	font-size: 1.5em;
+	font-size: 1.5vw;
 }
