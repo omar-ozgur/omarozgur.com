@@ -32,21 +32,29 @@ h2 {
 }
 
 /* Backgrounds */
-.bg-header {
-	background-size: 100vmax 100vmax;
+.bg-section {
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url("../img/la.jpeg");
+	background-attachment: fixed;
 }
 
 .bg-header-cover {
 	width: 100vw;
 	height: 100vh;
-	background: rgba(50, 150, 255, 0.8);
+	margin: 0px;
 }
 
-.bg-fixed {
-	background-attachment: fixed;
+.bg-section-cover {
+	width: 100vw;
+	height: 80vh;
+	margin: 0px;
+}
+
+.bg-footer-cover {
+	width: 100vw;
+	height: 70vh;
+	margin: 0px;
 }
 
 /* Sidebar */
@@ -126,9 +134,44 @@ h2 {
 	margin: 0vh;
 }
 
-.content-footer {
-	height: 90%;
+.divider {
+	height: 20vh;
+	width: 100vw;
 	margin: 0px;
+	display: table;
+	color: #ffffff;
+	background-color: #2E2E2E;
+}
+
+.section-header {
+	margin: 0px;
+	display: table-cell;
+   	vertical-align: middle;
+   	text-align: center;
+}
+
+.content-footer {
+	height: 70%;
+	margin: 0px;
+}
+
+.table {
+	display: table;
+}
+
+.about-me {
+	padding: 0px 10vw 0px 10vw;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.about-me-text {
+	line-height: 130%;
+	font-weight: 500;
+	font-size: 2.5vmax;
+	color: #ffffff;
+	border: none;
 }
 
 .footer {
@@ -170,7 +213,7 @@ h2 {
 	margin: 0px 0px 0px 5vw;
 	line-height: 10vh;
 	color: #dddddd;
-	font-size: 2.5vh;
+	font-size: 1.5vw;
 }
 
 .align-header {
