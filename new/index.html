@@ -11,19 +11,14 @@
 	<meta name="description" content="My personal website">
 	<meta name="keywords" content="omar, ozgur, personal website, computer science, resume, UCLA, software, engineer, experience">
 
-	<!-- Fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div id="skrollr-body"></div> <!-- Enable skrollr on mobile devices -->
-
 	<!-- Sidebar content -->
-	<div id="sidebar">
+	<div id="sidebar" class="hidden-xs">
 
 		<!-- Up arrow -->
 		<button type="button" class="btn btn-default sidebar-icon" value="#header1">
@@ -35,6 +30,8 @@
 			<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
 		</button>
 	</div>
+
+	<div id="skrollr-body"> <!-- Enable skrollr on mobile devices -->
 
 	<!-- First header -->
 	<section id="header1">
@@ -66,23 +63,23 @@
 
 						<!-- Social media and resume -->
 						<ul class="links">
-								<li>
-									<a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/omar.ozgur.1"><span class="fa fa-facebook"></span></a> <!-- Facebook -->
-								</li>
-								<li>
-									<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/omarozgur"><span class="fa fa-linkedin"></span></a> <!-- Linnkedin -->
-								</li>
-								<li>
-									<a class="btn btn-social-icon btn-github" href="https://github.com/omar-ozgur"><span class="fa fa-github"></span></a> <!-- Github -->
-								</li>
-								<li>
-									<a class="btn btn-social-icon btn-file-text-o" href="pages/resume.pdf"><span class="fa fa-file-text-o resume"> Resume</span></a> <!-- Resume -->
-								</li>
-							</ul>
+							<li>
+								<a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/omar.ozgur.1"><span class="fa fa-facebook"></span></a> <!-- Facebook -->
+							</li>
+							<li>
+								<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/omarozgur"><span class="fa fa-linkedin"></span></a> <!-- Linnkedin -->
+							</li>
+							<li>
+								<a class="btn btn-social-icon btn-github" href="https://github.com/omar-ozgur"><span class="fa fa-github"></span></a> <!-- Github -->
+							</li>
+							<li>
+								<a class="btn btn-social-icon btn-file-text-o" href="pages/resume.pdf"><span class="fa fa-file-text-o resume"> Resume</span></a> <!-- Resume -->
+							</li>
+						</ul>
 						<div class="col-xs-4 col-xs-offset-4 text-center">
 
 							<!-- Scroll down button -->
-							<button type="button" class="btn btn-default sidebar-icon down-arrow" value="#header2">
+							<button type="button" class="btn btn-default sidebar-icon down-arrow hidden-xs" value="#header2">
 								<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
 							</button>
 						</div>
@@ -158,10 +155,15 @@
 		</div>
 	</section>
 
+	</div>
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
 	<!-- JavaScript -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/skrollr.js"></script>
+	<script src="js/skrollr.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
