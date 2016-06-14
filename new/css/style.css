@@ -1,19 +1,16 @@
+/************************
+********* Colors ********
+************************/
 /*
-[Colors]
 White: #ffffff (255, 255, 255)
 Grey: #cccccc
 Blue: (50, 150, 255)
 */
 
-/* General */
-*,:before,:after {
-	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	-webkit-backface-visibility:hidden;
-}
-
-html, body, section, .jumbotron {
+/************************
+******** General ********
+************************/
+html, body {
 	width: 100vw;
 	height: 100vh !important;
 	margin: 0px;
@@ -22,16 +19,51 @@ html, body, section, .jumbotron {
 	font-family: 'Lato', sans-serif;
 }
 
-/* Font Styles */
-h1 {
+.full-height {
+	height: 100%;
+}
+
+.table {
+	display: table;
+}
+
+.divider {
+	height: 20vh;
+	width: 100vw;
+	margin: 0px;
+	display: table;
+	color: #ffffff;
+	background-color: #2E2E2E;
+}
+
+.section-header {
+	margin: 0px;
+	display: table-cell;
+   	vertical-align: middle;
+   	text-align: center;
+}
+
+/************************
+****** Font Styles ******
+************************/
+.white-lg {
+	font-size: 4em;
 	color: #ffffff;
 }
 
-h2 {
+.white-md {
+	font-size: 3em;
+	color: #ffffff;
+}
+
+.gray-md {
+	font-size: 2em;
 	color: #cccccc;
 }
 
-/* Backgrounds */
+/************************
+****** Backgrounds ******
+************************/
 .bg-section {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -57,7 +89,9 @@ h2 {
 	margin: 0px;
 }
 
-/* Sidebar */
+/************************
+******** Sidebar ********
+************************/
 #sidebar {
 	position: fixed;
 	top: 25vh;
@@ -65,18 +99,21 @@ h2 {
 }
 
 .sidebar-icon {
+	display: block;
 	margin-top: 10vh;
 	margin-bottom: 10vh;
 	border-radius: 50%;
+	font-size: 1.5em;
+	color: white !important;
 	outline: none !important;
+	background: none !important;
+	border: none !important;
 }
 
-/* Content */
-.full-height {
-	height: 100%;
-}
-
-.circle {
+/************************
+********* Header ********
+************************/
+.profile-pic {
 	width: 110px;
 	height: auto;
 	margin: auto;
@@ -96,88 +133,25 @@ h2 {
 	color: #ffffff;
 }
 
-.links {
-	height: 15vh;
-	list-style-type: none;
-	display: table;
-	margin: auto;
-	padding: 0px;
-}
-
-.links li {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-.links span {
-	width: 7vh;
-    height: 7vh;
-    line-height: 7vh;
-    border-radius: 50%;
-    background: #ffffff;
-    margin: auto;
-    font-size: 4vh;
-}
-
-.links .resume {
-	width: 20vh;
-	height: 7vh;
-	border-radius: 25px;
-	font-size: 2.5vh;
-}
-
 .down-arrow {
-	background: rgba(255, 255, 255, 0) !important;
-	color: #ffffff !important;
-	border: none !important;
 	font-size: 200%;
 	margin: 0vh;
+	display: inline;
+	text-align: center;
+	color: #ffffff !important;
+	border: none !important;
+	background: rgba(255, 255, 255, 0) !important;
 }
 
-.divider {
-	height: 20vh;
-	width: 100vw;
-	margin: 0px;
-	display: table;
-	color: #ffffff;
-	background-color: #2E2E2E;
-}
-
-.section-header {
-	margin: 0px;
-	display: table-cell;
-   	vertical-align: middle;
-   	text-align: center;
-}
-
-.content-footer {
-	height: 70%;
-	margin: 0px;
-}
-
-.table {
-	display: table;
-}
-
-.about-me {
-	padding: 0px 10vw 0px 10vw;
-	display: table-cell;
-	vertical-align: middle;
+.align-header {
 	text-align: center;
 }
 
-.about-me-text {
-	line-height: 130%;
-	font-weight: 500;
-	font-size: 2.5vmax;
-	color: #ffffff;
-	border: none;
-}
-
-.footer {
-	height: 10%;
-	background: rgba(50, 50, 50, 0.9);
-	bottom: 0px;
+/************************
+********* Footer ********
+************************/
+.content-footer {
+	height: 70%;
 	margin: 0px;
 }
 
@@ -209,6 +183,13 @@ h2 {
     font-size: 4vh;
 }
 
+.footer {
+	height: 10%;
+	background: rgba(50, 50, 50, 0.9);
+	bottom: 0px;
+	margin: 0px;
+}
+
 .text-footer {
 	margin: 0px 0px 0px 5vw;
 	line-height: 10vh;
@@ -216,10 +197,60 @@ h2 {
 	font-size: 1.5vw;
 }
 
-.align-header {
+/************************
+********* Links *********
+************************/
+.links {
+	height: 15vh;
+	list-style-type: none;
+	display: table;
+	margin: auto;
+	padding: 0px;
+}
+
+.links li {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.links span {
+	width: 7vh;
+    height: 7vh;
+    line-height: 7vh;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: auto;
+    font-size: 4vh;
+}
+
+.links .resume {
+	width: 20vh;
+	height: 7vh;
+	border-radius: 25px;
+	font-size: 2.5vh;
+}
+
+/************************
+******** About me *******
+************************/
+.about-me {
+	padding: 0px 10vw 0px 10vw;
+	display: table-cell;
+	vertical-align: middle;
 	text-align: center;
 }
 
+.about-me-text {
+	line-height: 130%;
+	font-weight: 500;
+	font-size: 2.5vmax;
+	color: #ffffff;
+	border: none;
+}
+
+/************************
+***** Mobile devices ****
+************************/
 @media (min-width: 768px) {
     .align-header {
         text-align: left;
