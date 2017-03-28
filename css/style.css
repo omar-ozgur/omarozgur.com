@@ -27,9 +27,19 @@ html, body {
 /************************
 ****** Font Styles ******
 ************************/
-.white-lg {
+.white-xl {
 	font-size: 5em;
 	color: #ffffff;
+}
+
+.gray-xl {
+	font-size: 5em;
+	color: #333333;
+}
+
+.gray-lg {
+	font-size: 4em;
+	color: #333333;
 }
 
 .gray-md {
@@ -51,8 +61,12 @@ html, body {
 
 .bg-header-cover {
 	width: 100%;
-	height: 90%;
+	height: 100%;
 	margin: 0px;
+}
+
+.bg-header-last {
+	height: 90%;
 }
 
 /************************
@@ -63,7 +77,15 @@ html, body {
 	color: #ffffff;
 }
 
+.header-margin {
+	margin-top: 10vh;
+}
+
 .align-header {
+	text-align: center;
+}
+
+.text-center {
 	text-align: center;
 }
 
@@ -81,7 +103,7 @@ html, body {
 	margin: 0px 0px 0px 5vw;
 	line-height: 10vh;
 	color: #dddddd;
-	font-size: 1.5vw;
+	font-size: 14px;
 }
 
 /************************
@@ -93,6 +115,10 @@ html, body {
 	display: table;
 	margin: auto;
 	padding: 0px;
+}
+
+.links a {
+	box-shadow: none !important;
 }
 
 .links li {
