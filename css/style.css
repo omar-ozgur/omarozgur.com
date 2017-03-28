@@ -141,14 +141,8 @@ html, body {
 }
 
 /************************
-***** Mobile devices ****
+********* Cards *********
 ************************/
-@media (min-width: 768px) {
-  .align-header {
-    text-align: left;
-  }
-}
-
 .post-module {
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -166,6 +160,7 @@ html, body {
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
 .post-module:hover .thumbnail img,
 .hover .thumbnail img {
   -webkit-transform: scale(1.1);
@@ -174,12 +169,14 @@ html, body {
   opacity: .6;
   filter: brightness(50%);
 }
+
 .post-module .thumbnail {
   height: 300px;
   overflow: hidden;
   padding: 0px;
   border-radius: 0px;
 }
+
 .post-module .thumbnail img {
   display: block;
   width: 120%;
@@ -192,6 +189,7 @@ html, body {
   min-height: 100%;
   object-fit: cover;
 }
+
 .post-module .post-content {
   position: absolute;
   top: 180px;
@@ -209,6 +207,7 @@ html, body {
   -o-transition: all 0.3s cubic-bezier(0.37, 1, 1, 1.05) 0s;
   transition: all 0.3s cubic-bezier(0.37, 1, 1, 1.05) 0s;
 }
+
 .post-module .post-content .title {
   margin: 0;
   padding: 0 0 15px;
@@ -217,6 +216,7 @@ html, body {
   font-weight: 700;
   bottom: 0px;
 }
+
 .post-module .post-content .sub_title {
   margin: 0;
   padding: 0 0 15px;
@@ -224,6 +224,7 @@ html, body {
   font-size: 20px;
   font-weight: 400;
 }
+
 .post-module .post-content .description {
   color: #ffffff;
   display: none;
@@ -232,9 +233,18 @@ html, body {
   height: 180px;
   opacity: 1;
 }
+
 .hover .post-content .description {
   display: block !important;
   height: auto !important;
   opacity: 1 !important;
 }
 
+/************************
+***** Mobile devices ****
+************************/
+@media (min-width: 768px) {
+  .align-header {
+    text-align: left;
+  }
+}
