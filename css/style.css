@@ -186,8 +186,9 @@ html, body {
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
   min-width: 100%;
-  min-height: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .post-module .post-content {
