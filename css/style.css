@@ -3,8 +3,9 @@
 ************************/
 /*
 White: #ffffff (255, 255, 255)
-Grey: #cccccc
-Blue: (50, 150, 255)
+Light gray: #dddddd
+Dark gray: #333333
+Blue: #03a9f4 (3, 169, 244)
 */
 
 /************************
@@ -16,59 +17,24 @@ html, body {
 	margin: 0px;
 	padding: 0px;
 	background-color: #ffffff;
-	font-family: 'Avenir', sans-serif;
+	font-family: 'Rubik', sans-serif;
 }
 
 .full-height {
 	height: 100%;
 }
 
-.table {
-	display: table;
-}
-
-#skrollr-body {
-    float: left;
-    width: 100%;
-    height: 100%;
-}
-
-.divider {
-	height: 20vh;
-	width: 100vw;
-	margin: 0px;
-	display: table;
-	color: #ffffff;
-}
-
-.section-header {
-	margin: 0px;
-	display: table-cell;
-   	vertical-align: middle;
-   	text-align: center;
-}
-
 /************************
 ****** Font Styles ******
 ************************/
 .white-lg {
-	font-size: 4em;
-	color: #ffffff;
-}
-
-.grey-dark-lg {
-	font-size: 4em;
-	color: #333333;
-}
-
-.white-md {
-	font-size: 3em;
+	font-size: 5em;
 	color: #ffffff;
 }
 
 .gray-md {
 	font-size: 2em;
-	color: #cccccc;
+	color: #dddddd;
 }
 
 /************************
@@ -79,82 +45,22 @@ html, body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+	height: 100vh;
+	width: 100vw;
 }
 
 .bg-header-cover {
-	width: 100vw;
-	height: 90vh;
+	width: 100%;
+	height: 90%;
 	margin: 0px;
-}
-
-.bg-section-cover {
-	width: 100vw;
-	height: 80vh;
-	margin: 0px;
-}
-
-.bg-footer-cover {
-	width: 100vw;
-	height: 70vh;
-	margin: 0px;
-}
-
-/************************
-******** Sidebar ********
-************************/
-#sidebar {
-	position: fixed;
-	top: 25vh;
-	right: 5vw;
-}
-
-.sidebar-icon {
-	display: block;
-	margin-top: 10vh;
-	margin-bottom: 10vh;
-	border-radius: 50%;
-	font-size: 1.5em;
-	color: white !important;
-	outline: none !important;
-	background: none !important;
-	border: none !important;
 }
 
 /************************
 ********* Header ********
 ************************/
-.profile-pic {
-	width: 110px;
-	height: auto;
-	margin: auto;
-	border-radius: 50%;
-	vertical-align: center;
-	background: rgba(255, 255, 255, 1);
-}
-
-#img-profile {
-	width: 100%;
-	height: auto;
-	border-radius: 50%;
-}
-
-#canvas {
-	position: absolute;
-}
-
 .content-header {
 	margin-top: 20vh;
 	color: #ffffff;
-}
-
-.down-arrow {
-	font-size: 200%;
-	margin: 0vh;
-	display: inline;
-	text-align: center;
-	color: #ffffff !important;
-	border: none !important;
-	background: rgba(255, 255, 255, 0) !important;
 }
 
 .align-header {
@@ -164,39 +70,6 @@ html, body {
 /************************
 ********* Footer ********
 ************************/
-.content-footer {
-	height: 70%;
-	margin: 0px;
-}
-
-.footer-list {
-	height: 100%;
-	margin: 0px 5vw 0px 0px;
-	list-style-type: none;
-	display: table;
-	float: right;
-	padding: 0px;
-}
-
-.footer-list li {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-.footer-list a {
-	padding: 0px 1vw 0px 0px;
-}
-
-.footer-list span {
-	width: 6vh;
-    height: 6vh;
-    line-height: 6vh;
-    border-radius: 50%;
-    background: #ffffff;
-    margin: auto;
-    font-size: 4vh;
-}
-
 .footer {
 	height: 10%;
 	background: rgba(50, 50, 50, 0.9);
@@ -229,12 +102,12 @@ html, body {
 
 .links span {
 	width: 7vh;
-    height: 7vh;
-    line-height: 7vh;
-    border-radius: 50%;
-    background: #ffffff;
-    margin: auto;
-    font-size: 4vh;
+  height: 7vh;
+  line-height: 7vh;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 1);
+  margin: auto;
+  font-size: 4vh;
 }
 
 .links .resume {
@@ -245,28 +118,10 @@ html, body {
 }
 
 /************************
-******** About me *******
-************************/
-.about-me {
-	padding: 0px 10vw 0px 10vw;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-}
-
-.about-me-text {
-	line-height: 130%;
-	font-weight: 500;
-	font-size: 2.5vmax;
-	color: #ffffff;
-	border: none;
-}
-
-/************************
 ***** Mobile devices ****
 ************************/
 @media (min-width: 768px) {
-    .align-header {
-        text-align: left;
-    }
+  .align-header {
+    text-align: left;
+  }
 }

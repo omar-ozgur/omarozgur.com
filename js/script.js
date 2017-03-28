@@ -9,4 +9,4 @@ function ScrollToSection(){
 /* Initialize functions */
 $(document).ready(function(){ 
 	ScrollToSection();
-}); 
+});
