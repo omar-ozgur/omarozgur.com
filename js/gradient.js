@@ -1,6 +1,8 @@
 // Target to give background to
 var $div = document.getElementById("gradient");
 
+if ($div) {
+
 // RGB values of the gradients
 var gradients = [
   { start: [3, 169, 244], stop: [30, 41, 58] },
@@ -121,3 +123,4 @@ calc_steps();
 
 // Begin animation
 window.requestAnimationFrame(updateGradient);
+}
